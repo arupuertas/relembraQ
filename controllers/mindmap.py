@@ -42,4 +42,4 @@ def gerar_mapa_mental_visual_clusters(clusters, output_path):
             dot.edge(parent_node, child_node)
 
     # Renderiza e salva o gráfico em PNG, removendo arquivos temporários
-    dot.render(output_path, format='png', cleanup=True)
+    dot.render(output_path.replace(".png", ""), format="png", cleanup=True)
