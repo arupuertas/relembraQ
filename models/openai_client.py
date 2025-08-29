@@ -1,9 +1,5 @@
-import os
-from dotenv import load_dotenv
+import streamlit as st
 from openai import OpenAI
 
-# Carrega variáveis do .env
-load_dotenv()
-
-# Cria cliente atual compatível com openai>=1.0.0
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Cria cliente usando a chave do Streamlit Secrets
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])

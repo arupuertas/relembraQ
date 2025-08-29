@@ -6,7 +6,7 @@ from langchain.callbacks.base import BaseCallbackHandler  # Base para callbacks 
 import os
 import json
 from dotenv import load_dotenv  # Carrega variáveis de ambiente de um arquivo .env
-
+import streamlit as st
 # Carrega variáveis do arquivo .env (como a API key)
 load_dotenv()
 
@@ -51,7 +51,7 @@ def gerar_resumos(chunk, memoria=None):
 
     # Cria instância do modelo GPT-4 via LangChain
     llm = ChatOpenAI(
-        openai_api_key=os.getenv("OPENAI_API_KEY"),  # Usa chave da variável de ambiente
+        openai_api_key = st.secrets["OPENAI_API_KEY"],  # Usa chave da variável de ambiente
         temperature=0.3,  # Temperatura baixa para respostas mais objetivas
         model_name="gpt-4",
         streaming=False,  # Não usar streaming de tokens neste caso
