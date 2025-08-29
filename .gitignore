@@ -1,1 +1,9 @@
+# Arquivos temporários Python
+*.pyc
+__pycache__/
+
+# Arquivos de configuração sensíveis
 .env
+
+# Saídas/outputs
+outputs/
