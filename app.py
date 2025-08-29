@@ -21,14 +21,14 @@ with col2:
             line-height: 1.3; 
             margin-top: 0;
         ">
-            🧠 RelembraQ — Seu Resumidor Inteligente de PDFs
+            🧠 RelembraQ — Seu Resumidor Inteligente.
         </h3>
         <p style="
             color: #555555; 
             font-size: 16px; 
             margin-top: 5px;
         ">
-            O mais novo produto do grupoQ para agilizar seus estudos e organizar informações de forma inteligente.
+            O mais novo produto do grupoQ para agilizar seus estudos e organizar informações de forma inovadora.
         </p>
     """, unsafe_allow_html=True)
     
