@@ -1,4 +1,4 @@
-fitz==0.0.1.dev2
+fitz
 graphviz==0.21
 langchain==0.3.27
 langchain_openai==0.3.32
