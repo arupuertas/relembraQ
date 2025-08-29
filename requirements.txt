@@ -3,7 +3,7 @@ graphviz==0.21
 langchain==0.3.27
 langchain_openai==0.3.32
 matplotlib==3.10.5
-numpy==2.3.2
+numpy
 openai==1.102.0
 python-dotenv==1.1.1
 scikit_learn==1.7.1
