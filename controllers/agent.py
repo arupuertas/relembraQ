@@ -53,7 +53,7 @@ def gerar_resumos(chunk, memoria=None):
     llm = ChatOpenAI(
         openai_api_key = st.secrets["OPENAI_API_KEY"],  # Usa chave da variável de ambiente
         temperature=0.3,  # Temperatura baixa para respostas mais objetivas
-        model_name="gpt-4",
+        model_name="gpt-5",
         streaming=False,  # Não usar streaming de tokens neste caso
         callbacks=[PrintCallback()]  # Callback para imprimir tokens gerados
     )
